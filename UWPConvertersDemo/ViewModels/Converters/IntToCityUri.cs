@@ -7,14 +7,16 @@ using Windows.UI.Xaml.Data;
 
 namespace UWPConvertersDemo.ViewModels.Converters
 {
-    class IntToCityName : IValueConverter
+    class IntToCityUri: IValueConverter
     {
+        public List<string> Assets { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Copenhagen", "Dubrovnik", "Edinburgh", "London", "NewYork", "Paris", "Prague", "Rome", "StPetersburg", "Vienna" };
+
         public object Convert(object value, Type targetType, object parameter, string language)
         {
-            if (value is int @int && targetType == typeof(string))
+            if (value is int)
             {
-                int cislo = @int % Names.Count;
-                return Names[cislo];
+                int cislo = ((int)value) % Assets.Count;
+                return new System.Uri("ms-appx:///Assets/Photos/" + Assets[cislo] + ".jpg");
             }
             return value.ToString();
         }
@@ -23,13 +25,11 @@ namespace UWPConvertersDemo.ViewModels.Converters
         {
             if (value is string && targetType == typeof(int))
             {
-                int found = Names.IndexOf(value as string);
+                int found = Assets.IndexOf(value as string);
                 if (found >= 0)
                     return found;
             }
             return value.ToString();
         }
-
-        public List<string> Names { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paris", "Prague", "Rome", "St. Petersburg", "Vienna" };
     }
 }

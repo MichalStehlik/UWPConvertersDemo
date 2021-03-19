@@ -11,8 +11,10 @@ namespace UWPConvertersDemo.ViewModels
     class MainViewModel : INotifyPropertyChanged
     {
         private int _cityIndex = 0;
-        //private string _cityName;
-
+        // názvy obrázků vložených mezi Assety
+        public List<string> Assets { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Copenhagen", "Dubrovnik", "Edinburgh", "London", "NewYork", "Paris", "Prague", "Rome", "StPetersburg", "Vienna" };
+        // názvy měst
+        public List<string> Names { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paris", "Prague", "Rome", "St. Petersburg", "Vienna" };
         public int CityIndex
         {
             get
@@ -23,23 +25,8 @@ namespace UWPConvertersDemo.ViewModels
             {
                 _cityIndex = value;
                 NotifyPropertyChanged();
-                //CityName = _names[_cityIndex];
             }
         }
-        /*
-        public string CityName
-        {
-            get
-            {
-                return _cityName;
-            }
-            set
-            {
-                _cityName = value;
-                NotifyPropertyChanged("CityName");
-            }
-        }
-        */
 
         public event PropertyChangedEventHandler PropertyChanged;
 

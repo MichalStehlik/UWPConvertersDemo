@@ -124,6 +124,8 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\Converters\IntToCityName.cs" />
+    <Compile Include="ViewModels\Converters\IntToCityPicture.cs" />
+    <Compile Include="ViewModels\Converters\IntToCityUri.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +134,19 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Photos\Amsterdam.jpg" />
+    <Content Include="Assets\Photos\Bergen.jpg" />
+    <Content Include="Assets\Photos\Budapest.jpg" />
+    <Content Include="Assets\Photos\Copenhagen.jpg" />
+    <Content Include="Assets\Photos\Dubrovnik.jpg" />
+    <Content Include="Assets\Photos\Edinburgh.jpg" />
+    <Content Include="Assets\Photos\London.jpg" />
+    <Content Include="Assets\Photos\NewYork.jpg" />
+    <Content Include="Assets\Photos\Paris.jpg" />
+    <Content Include="Assets\Photos\Prague.jpg" />
+    <Content Include="Assets\Photos\Rome.jpg" />
+    <Content Include="Assets\Photos\StPetersburg.jpg" />
+    <Content Include="Assets\Photos\Vienna.jpg" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
