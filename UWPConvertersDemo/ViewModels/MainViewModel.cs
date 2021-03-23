@@ -14,7 +14,7 @@ namespace UWPConvertersDemo.ViewModels
         // názvy obrázků vložených mezi Assety
         public List<string> Assets { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Copenhagen", "Dubrovnik", "Edinburgh", "London", "NewYork", "Paris", "Prague", "Rome", "StPetersburg", "Vienna" };
         // názvy měst
-        public List<string> Names { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paris", "Prague", "Rome", "St. Petersburg", "Vienna" };
+        public List<string> Names { get; } = new List<string> { "Amsterdam", "Bergen", "Budapešť", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paříž", "Praha", "Řím", "Petrohrad", "Vídeň" };
         public int CityIndex
         {
             get

@@ -13,7 +13,7 @@
         <viewmodels:MainViewModel />
     </Page.DataContext>
     <Page.Resources>
-        <converters:IntToCityName x:Key="IntNameConverter" />
+        <converters:IntToCityName x:Key="IntNameConverter"/>
         <converters:IntToCityUri x:Key="IntUriConverter" />
     </Page.Resources>
     <Grid>

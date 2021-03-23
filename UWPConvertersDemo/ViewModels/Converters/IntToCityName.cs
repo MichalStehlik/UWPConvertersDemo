@@ -30,6 +30,8 @@ namespace UWPConvertersDemo.ViewModels.Converters
             return value.ToString();
         }
 
-        public List<string> Names { get; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paris", "Prague", "Rome", "St. Petersburg", "Vienna" };
+        public Binding Data { get; set; }
+
+        public List<string> Names { get; set; } = new List<string> { "Amsterdam", "Bergen", "Budapest", "Kodaň", "Dubrovnik", "Edinburgh", "Londýn", "New York", "Paris", "Prague", "Rome", "St. Petersburg", "Vienna" };
     }
 }
